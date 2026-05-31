@@ -16,18 +16,23 @@ export default function Nav() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? 'bg-charcoal/96 backdrop-blur-md border-b border-cream/8'
-          : ''
+        scrolled ? 'bg-charcoal/96 backdrop-blur-md border-b border-cream/8' : ''
       }`}
     >
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-5 flex items-center justify-between">
-        {/* Logo */}
-        <a
-          href="#"
-          className="font-display text-cream text-lg tracking-[0.2em] uppercase font-bold"
-        >
-          NGHS<span className="text-brass">.</span>
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+
+        {/* Logo: image mark + wordmark */}
+        <a href="#" className="flex items-center gap-3 group">
+          <div className="w-8 h-8 bg-white flex items-center justify-center overflow-hidden flex-shrink-0 ring-1 ring-cream/10 group-hover:ring-brass/40 transition-all duration-300">
+            <img
+              src="/images/logo.jpg"
+              alt=""
+              className="w-7 h-7 object-contain"
+            />
+          </div>
+          <span className="font-display text-cream text-base tracking-[0.2em] uppercase font-bold group-hover:text-cream transition-colors duration-200">
+            NGHS<span className="text-brass">.</span>
+          </span>
         </a>
 
         {/* Desktop links */}
@@ -53,25 +58,14 @@ export default function Nav() {
 
         {/* Mobile hamburger */}
         <button
+          type="button"
           aria-label="Toggle menu"
           className="md:hidden flex flex-col gap-1.5 p-1"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <span
-            className={`block w-6 h-px bg-cream transition-all duration-300 origin-center ${
-              menuOpen ? 'rotate-45 translate-y-[5px]' : ''
-            }`}
-          />
-          <span
-            className={`block w-6 h-px bg-cream transition-all duration-300 ${
-              menuOpen ? 'opacity-0' : ''
-            }`}
-          />
-          <span
-            className={`block w-6 h-px bg-cream transition-all duration-300 origin-center ${
-              menuOpen ? '-rotate-45 -translate-y-[9px]' : ''
-            }`}
-          />
+          <span className={`block w-6 h-px bg-cream transition-all duration-300 origin-center ${menuOpen ? 'rotate-45 translate-y-[5px]' : ''}`} />
+          <span className={`block w-6 h-px bg-cream transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+          <span className={`block w-6 h-px bg-cream transition-all duration-300 origin-center ${menuOpen ? '-rotate-45 -translate-y-[9px]' : ''}`} />
         </button>
       </div>
 

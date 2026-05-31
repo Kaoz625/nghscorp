@@ -18,13 +18,38 @@ const pillars = [
 
 export default function Authority() {
   return (
-    <section id="about" className="bg-charcoal py-24 md:py-36 px-6 md:px-12">
+    <section id="about" className="bg-charcoal py-24 md:py-36 px-6 md:px-12 overflow-hidden">
       <div className="max-w-[1400px] mx-auto">
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr_1fr] gap-0 lg:gap-16 xl:gap-20 items-stretch">
 
-          {/* Left: copy block */}
-          <div>
+          {/* ── Photo column ── */}
+          <div className="relative mb-12 lg:mb-0 overflow-hidden">
+            {/* Brass frame accent */}
+            <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-brass z-10" />
+            <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-brass z-10" />
+
+            <div className="relative h-[340px] lg:h-full min-h-[420px] overflow-hidden">
+              <img
+                src="/images/hero.jpg"
+                alt="NGHS Corp. professionals — NYC compliance specialists"
+                className="absolute inset-0 w-full h-full object-cover object-[60%_30%]"
+              />
+              {/* Subtle charcoal overlay at top and bottom */}
+              <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-charcoal/60 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-charcoal/60 to-transparent" />
+              <div className="absolute inset-0 bg-charcoal/20" />
+            </div>
+
+            {/* Floating label over photo */}
+            <div className="absolute bottom-6 left-6 z-10">
+              <span className="font-mono text-brass text-[10px] tracking-[0.3em] uppercase block mb-1">NGHS Corp.</span>
+              <p className="font-display text-cream text-sm font-semibold leading-snug">NYC Compliance<br />Specialists</p>
+            </div>
+          </div>
+
+          {/* ── Copy block ── */}
+          <div className="flex flex-col justify-center">
             <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-6">
               Why NGHS Corp.
             </span>
@@ -54,8 +79,8 @@ export default function Authority() {
             </blockquote>
           </div>
 
-          {/* Right: stat pillars */}
-          <div className="divide-y divide-cream/10">
+          {/* ── Stat pillars ── */}
+          <div className="divide-y divide-cream/10 flex flex-col justify-center mt-12 lg:mt-0">
             {pillars.map((p) => (
               <div key={p.label} className="py-9 group">
                 <div className="flex items-baseline gap-3 mb-3">
@@ -71,7 +96,30 @@ export default function Authority() {
                 </p>
               </div>
             ))}
+
+            {/* Social links */}
+            <div className="pt-9">
+              <span className="font-mono text-cream/25 text-[10px] tracking-[0.3em] uppercase block mb-4">Connect</span>
+              <div className="flex gap-5">
+                {[
+                  { label: 'LinkedIn', href: 'https://linkedin.com/company/nghscorp' },
+                  { label: 'Instagram', href: 'https://instagram.com/nghscorp' },
+                  { label: 'Facebook', href: 'https://facebook.com/nghscorp' },
+                ].map(({ label, href }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-cream/30 text-[10px] tracking-[0.2em] uppercase hover:text-brass transition-colors duration-200"
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </section>

@@ -1,9 +1,9 @@
 const navLinks = ['Services', 'About', 'Process', 'Contact']
 
 const socialLinks = [
-  { label: 'LinkedIn', href: 'https://linkedin.com' },
-  { label: 'Instagram', href: 'https://instagram.com' },
-  { label: 'Facebook', href: 'https://facebook.com' },
+  { label: 'LinkedIn', href: 'https://linkedin.com/company/nghscorp' },
+  { label: 'Instagram', href: 'https://instagram.com/nghscorp' },
+  { label: 'Facebook', href: 'https://facebook.com/nghscorp' },
 ]
 
 export default function Footer() {
@@ -13,12 +13,22 @@ export default function Footer() {
 
         {/* Top row */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-10 mb-12">
+
+          {/* Brand */}
           <div>
-            <div className="font-display text-cream text-2xl tracking-[0.2em] uppercase font-bold mb-2">
-              NGHS<span className="text-brass">.</span>
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-9 h-9 bg-white flex items-center justify-center overflow-hidden flex-shrink-0 ring-1 ring-cream/10">
+                <img src="/images/logo.jpg" alt="NGHS Corp. logo" className="w-8 h-8 object-contain" />
+              </div>
+              <div className="font-display text-cream text-xl tracking-[0.2em] uppercase font-bold">
+                NGHS<span className="text-brass">.</span>
+              </div>
             </div>
             <p className="font-mono text-cream/25 text-xs tracking-[0.25em] uppercase">
               Trusted. Strategic. Proven.
+            </p>
+            <p className="font-mono text-cream/15 text-[10px] tracking-[0.2em] uppercase mt-1">
+              New York City, NY
             </p>
           </div>
 
@@ -57,7 +67,7 @@ export default function Footer() {
         {/* Bottom row */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <p className="font-mono text-cream/18 text-xs tracking-widest">
-            © 2024 NGHS Corp. All rights reserved. New York City, NY.
+            © 2025 NGHS Corp. All rights reserved. New York City, NY.
           </p>
           <a
             href="mailto:nicole@nghscorp.com"
