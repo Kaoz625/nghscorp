@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"gh auth status 2>&1 && echo \\\"---\\\" && git status 2>&1\",\"description\":\"Check GitHub CLI auth status and git state\"}",
-  "error": "Exit code 128\ngithub.com\n  ✓ Logged in to github.com account Kaoz625 (keyring)\n  - Active account: true\n  - Git operations protocol: https\n  - Token: gho_************************************\n  - Token scopes: 'delete_repo', 'gist', 'read:org', 'repo', 'workflow'\n---\nfatal: not a git repository (or any of the parent directories): .git",
-  "timestamp": "2026-05-31T01:01:24.615Z",
-  "retry_count": 2
-}
