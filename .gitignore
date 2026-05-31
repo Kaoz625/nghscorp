@@ -35,3 +35,8 @@ next-env.d.ts
 
 # omc internal state
 .omc/
+
+# secrets
+.cf-pages-token
+cf-*.png
+cf-create-token.js
