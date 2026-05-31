@@ -1,21 +1,25 @@
-import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
-import Services from '@/components/Services'
-import Authority from '@/components/Authority'
-import Process from '@/components/Process'
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
+import StatsBar from '@/components/StatsBar'
+import WhoWeHelp from '@/components/WhoWeHelp'
+import ServicesOverview from '@/components/ServicesOverview'
+import PhotoBreak from '@/components/PhotoBreak'
+import ProcessTeaser from '@/components/ProcessTeaser'
+import Testimonials from '@/components/Testimonials'
+import AboutTeaser from '@/components/AboutTeaser'
+import CTABanner from '@/components/CTABanner'
 
 export default function Home() {
   return (
-    <main>
-      <Nav />
+    <>
       <Hero />
-      <Services />
-      <Authority />
-      <Process />
-      <Contact />
-      <Footer />
-    </main>
+      <StatsBar />
+      <WhoWeHelp />
+      <ServicesOverview />
+      <PhotoBreak />
+      <ProcessTeaser />
+      <Testimonials />
+      <AboutTeaser />
+      <CTABanner />
+    </>
   )
 }
