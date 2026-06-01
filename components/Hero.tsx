@@ -31,7 +31,7 @@ export default function Hero() {
 
         {/* Top eyebrow */}
         <div className="w-full flex justify-between items-center">
-          <span className={`font-mono text-brass text-xs tracking-[0.3em] uppercase ${fade(100)}`} style={{ transitionDelay: '100ms' }}>
+          <span className={`font-mono text-brand text-xs tracking-[0.3em] uppercase ${fade(100)}`} style={{ transitionDelay: '100ms' }}>
             NYC Property Compliance
           </span>
           <span className={`hidden md:block font-mono text-cream/25 text-xs tracking-[0.2em] uppercase ${fade(200)}`} style={{ transitionDelay: '200ms' }}>
@@ -60,7 +60,7 @@ export default function Hero() {
                 className={`block overflow-hidden transition-all duration-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 style={{ transitionDelay: `${300 + i * 130}ms` }}
               >
-                <span className={`block text-[clamp(2.4rem,5.5vw,5.5rem)] font-black leading-[0.9] tracking-tight ${accent ? 'text-brass' : 'text-cream'}`}>
+                <span className={`block text-[clamp(2.4rem,5.5vw,5.5rem)] font-black leading-[0.9] tracking-tight ${accent ? 'text-brand' : 'text-cream'}`}>
                   {text}
                 </span>
               </div>
@@ -92,14 +92,14 @@ export default function Hero() {
           <div className={`mt-10 flex flex-wrap gap-4 items-center transition-all duration-700 ${fade(850)}`} style={{ transitionDelay: '850ms' }}>
             <a
               href="#contact"
-              className="group inline-flex items-center gap-3 bg-brass text-charcoal font-mono text-xs font-semibold tracking-[0.2em] uppercase px-8 py-4 hover:bg-cream transition-colors duration-300"
+              className="group inline-flex items-center gap-3 bg-brand text-white font-mono text-xs font-semibold tracking-[0.2em] uppercase px-8 py-4 hover:bg-cream hover:text-charcoal transition-colors duration-300"
             >
               RESOLVE YOUR VIOLATIONS
               <span className="group-hover:translate-x-1.5 transition-transform duration-200 text-base">→</span>
             </a>
             <a
               href="#services"
-              className="font-mono text-cream/40 text-xs tracking-[0.2em] uppercase hover:text-brass transition-colors duration-200 border-b border-transparent hover:border-brass pb-px"
+              className="font-mono text-cream/40 text-xs tracking-[0.2em] uppercase hover:text-brand transition-colors duration-200 border-b border-transparent hover:border-brand pb-px"
             >
               VIEW SERVICES
             </a>

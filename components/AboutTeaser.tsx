@@ -19,7 +19,7 @@ export default function AboutTeaser() {
               <div className="absolute inset-0 bg-charcoal/20" />
             </div>
             {/* Floating stat */}
-            <div className="absolute -bottom-6 -right-6 lg:-right-8 bg-brass p-6 z-10">
+            <div className="absolute -bottom-6 -right-6 lg:-right-8 bg-brand p-6 z-10">
               <div className="font-display text-charcoal text-3xl font-black leading-none">100%</div>
               <div className="font-mono text-charcoal/70 text-[10px] tracking-[0.2em] uppercase mt-1">NYC Only</div>
             </div>
@@ -27,7 +27,7 @@ export default function AboutTeaser() {
 
           {/* Copy */}
           <div className="order-1 lg:order-2">
-            <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-6">About NGHS Corp.</span>
+            <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-6">About NGHS Corp.</span>
             <h2 className="font-display text-cream text-[clamp(2rem,4.5vw,3.5rem)] font-bold leading-tight tracking-tight mb-6">
               New York Built.<br />NYC Compliance Expert.
             </h2>
@@ -42,13 +42,13 @@ export default function AboutTeaser() {
               <p className="font-display text-cream text-xl italic leading-snug">
                 "We built this firm because property owners deserve someone who actually shows up."
               </p>
-              <cite className="font-mono text-brass text-xs tracking-[0.25em] uppercase block mt-3 not-italic">
+              <cite className="font-mono text-brand text-xs tracking-[0.25em] uppercase block mt-3 not-italic">
                 — Nicole, Founder & Principal
               </cite>
             </blockquote>
             <Link
               href="/about/"
-              className="group inline-flex items-center gap-3 bg-brass text-charcoal font-mono text-xs font-semibold tracking-[0.2em] uppercase px-8 py-4 hover:bg-cream transition-colors duration-300"
+              className="group inline-flex items-center gap-3 bg-brand text-white font-mono text-xs font-semibold tracking-[0.2em] uppercase px-8 py-4 hover:bg-cream hover:text-charcoal transition-colors duration-300"
             >
               OUR STORY
               <span className="group-hover:translate-x-1.5 transition-transform duration-200">→</span>

@@ -68,10 +68,10 @@ export default function ComplianceServices() {
         <img src="/images/building.jpg" alt="NYC building" className="absolute inset-0 w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/70 to-charcoal/30" />
         <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 pb-16 md:pb-24 w-full">
-          <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-5">Services</span>
+          <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-5">Services</span>
           <h1 className="font-display text-cream text-[clamp(2.8rem,6vw,5.5rem)] font-black leading-[0.92] tracking-tight">
             Compliance<br />
-            <span className="text-brass">Services.</span>
+            <span className="text-brand">Services.</span>
           </h1>
           <p className="font-sans text-cream/55 text-xl mt-6 max-w-xl leading-relaxed">
             DOB, HPD, ECB — every NYC agency, every violation type. We handle the entire resolution process so you don't have to.
@@ -85,7 +85,7 @@ export default function ComplianceServices() {
           {services.map((s) => (
             <div key={s.num} className="py-14 grid grid-cols-1 lg:grid-cols-[100px_1fr_220px] gap-8 items-start">
               <div>
-                <span className="font-mono text-brass text-3xl font-light">{s.num}</span>
+                <span className="font-mono text-brand text-3xl font-light">{s.num}</span>
                 <span className="font-mono text-charcoal/30 text-[10px] tracking-[0.3em] uppercase block mt-2">{s.agency}</span>
               </div>
               <div>
@@ -113,7 +113,7 @@ export default function ComplianceServices() {
         <div className="relative z-10 py-24 md:py-32 px-6 md:px-12">
           <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-5">Don't Wait</span>
+              <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-5">Don't Wait</span>
               <h2 className="font-display text-cream text-[clamp(2rem,4vw,3.5rem)] font-bold leading-tight mb-6">
                 Violations Compound.<br />Act Before They Do.
               </h2>
@@ -129,7 +129,7 @@ export default function ComplianceServices() {
                 { label: 'Stop Work Order', value: 'Instant', sub: 'permit block' },
               ].map((stat) => (
                 <div key={stat.label} className="bg-charcoal/60 p-7 text-center">
-                  <div className="font-display text-brass text-3xl font-bold">{stat.value}</div>
+                  <div className="font-display text-brand text-3xl font-bold">{stat.value}</div>
                   <div className="font-mono text-cream/50 text-[10px] tracking-[0.2em] uppercase mt-1">{stat.sub}</div>
                   <div className="font-sans text-cream/30 text-xs mt-2">{stat.label}</div>
                 </div>
@@ -144,7 +144,7 @@ export default function ComplianceServices() {
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
-              <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-5">FAQ</span>
+              <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-5">FAQ</span>
               <h2 className="font-display text-cream text-[clamp(2rem,4vw,3.5rem)] font-bold leading-tight">
                 Common Questions.
               </h2>
@@ -162,11 +162,11 @@ export default function ComplianceServices() {
       </section>
 
       {/* CTA */}
-      <section className="bg-brass py-20 px-6 md:px-12">
+      <section className="bg-brand py-20 px-6 md:px-12">
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
-            <h2 className="font-display text-charcoal text-3xl md:text-4xl font-bold">Ready to resolve your violations?</h2>
-            <p className="font-sans text-charcoal/60 mt-2">We'll review your property and outline a plan — no obligation.</p>
+            <h2 className="font-display text-white text-3xl md:text-4xl font-bold">Ready to resolve your violations?</h2>
+            <p className="font-sans text-white/60 mt-2">We'll review your property and outline a plan — no obligation.</p>
           </div>
           <Link href="/contact/" className="flex-shrink-0 bg-charcoal text-cream font-mono text-xs font-semibold tracking-[0.2em] uppercase px-10 py-5 hover:bg-ink transition-colors duration-300">
             GET STARTED →

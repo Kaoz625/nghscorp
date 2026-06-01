@@ -29,7 +29,7 @@ export default function Process() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-20 gap-8">
           <div>
-            <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-5">
+            <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-5">
               The Process
             </span>
             <h2 className="font-display text-cream text-[clamp(2rem,5vw,4rem)] font-bold leading-tight tracking-tight">
@@ -51,7 +51,7 @@ export default function Process() {
             >
               {/* Number + arrow row */}
               <div className="flex items-center justify-between">
-                <span className="font-mono text-brass text-3xl">{step.num}</span>
+                <span className="font-mono text-brand text-3xl">{step.num}</span>
                 {i < steps.length - 1 && (
                   <span className="hidden lg:block font-sans text-cream/10 text-xl group-hover:text-brass/30 transition-colors duration-300">
                     →

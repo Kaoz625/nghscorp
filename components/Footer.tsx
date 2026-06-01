@@ -41,7 +41,7 @@ export default function Footer() {
             <div className="flex gap-5">
               {socialLinks.map(({ label, href }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer"
-                  className="font-mono text-cream/25 text-[10px] tracking-[0.2em] uppercase hover:text-brass transition-colors duration-200">
+                  className="font-mono text-cream/25 text-[10px] tracking-[0.2em] uppercase hover:text-brand transition-colors duration-200">
                   {label}
                 </a>
               ))}
@@ -79,7 +79,7 @@ export default function Footer() {
             <p className="font-mono text-cream/25 text-[10px] tracking-[0.3em] uppercase mb-5">Contact</p>
             <div className="flex flex-col gap-3">
               <a href="mailto:nicole@nghscorp.com"
-                className="font-sans text-cream/45 text-sm hover:text-brass transition-colors duration-200">
+                className="font-sans text-cream/45 text-sm hover:text-brand transition-colors duration-200">
                 nicole@nghscorp.com
               </a>
               <p className="font-sans text-cream/30 text-sm">New York City, NY</p>

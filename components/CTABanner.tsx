@@ -14,10 +14,10 @@ export default function CTABanner() {
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center md:items-end justify-between gap-10">
 
           <div>
-            <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-5">Ready?</span>
+            <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-5">Ready?</span>
             <h2 className="font-display text-cream text-[clamp(2.4rem,5.5vw,4.5rem)] font-black leading-[0.92] tracking-tight">
               Let's Clear Your<br />
-              <span className="text-brass">Violation Record.</span>
+              <span className="text-brand">Violation Record.</span>
             </h2>
             <p className="font-sans text-cream/50 text-lg mt-6 max-w-lg leading-relaxed">
               Send us your property address. We'll pull the violation history and
@@ -28,14 +28,14 @@ export default function CTABanner() {
           <div className="flex flex-col sm:flex-row gap-4 items-start flex-shrink-0">
             <Link
               href="/contact/"
-              className="group inline-flex items-center gap-3 bg-brass text-charcoal font-mono text-xs font-semibold tracking-[0.2em] uppercase px-10 py-5 hover:bg-cream transition-colors duration-300 whitespace-nowrap"
+              className="group inline-flex items-center gap-3 bg-brand text-white font-mono text-xs font-semibold tracking-[0.2em] uppercase px-10 py-5 hover:bg-cream hover:text-charcoal transition-colors duration-300 whitespace-nowrap"
             >
               GET STARTED
               <span className="group-hover:translate-x-1.5 transition-transform duration-200 text-base">→</span>
             </Link>
             <a
               href="mailto:nicole@nghscorp.com"
-              className="font-mono text-cream/40 text-xs tracking-[0.2em] uppercase hover:text-brass transition-colors duration-200 border-b border-transparent hover:border-brass pb-px self-center whitespace-nowrap"
+              className="font-mono text-cream/40 text-xs tracking-[0.2em] uppercase hover:text-brand transition-colors duration-200 border-b border-transparent hover:border-brand pb-px self-center whitespace-nowrap"
             >
               nicole@nghscorp.com
             </a>

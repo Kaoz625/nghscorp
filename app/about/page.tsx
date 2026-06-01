@@ -21,10 +21,10 @@ export default function About() {
         <img src="/images/hero.jpg" alt="NGHS Corp. team" className="absolute inset-0 w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/60 to-charcoal/20" />
         <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 pb-16 md:pb-24 w-full">
-          <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-5">Our Story</span>
+          <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-5">Our Story</span>
           <h1 className="font-display text-cream text-[clamp(2.8rem,6vw,5.5rem)] font-black leading-[0.92] tracking-tight">
             About<br />
-            <span className="text-brass">NGHS Corp.</span>
+            <span className="text-brand">NGHS Corp.</span>
           </h1>
         </div>
       </div>
@@ -33,7 +33,7 @@ export default function About() {
       <section className="bg-cream py-24 md:py-32 px-6 md:px-12">
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-6">Founded in NYC</span>
+            <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-6">Founded in NYC</span>
             <h2 className="font-display text-charcoal text-[clamp(2rem,4.5vw,3.5rem)] font-bold leading-tight tracking-tight mb-8">
               Built by Someone Who Knows<br />the System.
             </h2>
@@ -51,7 +51,7 @@ export default function About() {
               <p className="font-display text-charcoal text-xl italic leading-snug">
                 "I started this firm because property owners deserve someone who actually shows up — at the hearing, at the agency window, on the phone. That's what we do."
               </p>
-              <cite className="font-mono text-brass text-xs tracking-[0.25em] uppercase block mt-4 not-italic">
+              <cite className="font-mono text-brand text-xs tracking-[0.25em] uppercase block mt-4 not-italic">
                 — Nicole, Founder & Principal
               </cite>
             </blockquote>
@@ -73,7 +73,7 @@ export default function About() {
       {/* Values */}
       <section className="bg-charcoal py-24 md:py-32 px-6 md:px-12">
         <div className="max-w-[1400px] mx-auto">
-          <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-5">What We Stand For</span>
+          <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-5">What We Stand For</span>
           <h2 className="font-display text-cream text-[clamp(2rem,4.5vw,3.5rem)] font-bold leading-tight tracking-tight mb-16">
             Our Values.
           </h2>
@@ -90,7 +90,7 @@ export default function About() {
       </section>
 
       {/* Why us — stats */}
-      <section className="bg-brass py-20 md:py-24 px-6 md:px-12">
+      <section className="bg-brand py-20 md:py-24 px-6 md:px-12">
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
@@ -115,7 +115,7 @@ export default function About() {
             <h2 className="font-display text-cream text-3xl md:text-4xl font-bold">Ready to work with us?</h2>
             <p className="font-sans text-cream/45 mt-2">Reach out to Nicole and the team. No obligation.</p>
           </div>
-          <Link href="/contact/" className="flex-shrink-0 bg-brass text-charcoal font-mono text-xs font-semibold tracking-[0.2em] uppercase px-10 py-5 hover:bg-cream transition-colors duration-300">
+          <Link href="/contact/" className="flex-shrink-0 bg-brand text-white font-mono text-xs font-semibold tracking-[0.2em] uppercase px-10 py-5 hover:bg-cream hover:text-charcoal transition-colors duration-300">
             GET IN TOUCH →
           </Link>
         </div>

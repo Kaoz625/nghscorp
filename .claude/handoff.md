@@ -1,17 +1,26 @@
-Working on: NGHS Corp website redesign — nghscorp.nyctailblazers.com
-Last action: Redesign with real images — commit 98cc4b4 pushed, Cloudflare Pages deploying
-Next step: Verify https://nghscorp.nyctailblazers.com looks correct. Discuss what else to improve (copy, pages, form backend wiring).
+Working on: NGHS Corp website — color scheme update (brass → brand cyan #42BED5)
+Last action: Updated primary accent color across 22 files — build passes (11/11 pages)
+Next step: Deploy — source ~/.credentials/api-keys.env && npm run build && npx wrangler pages deploy out/ --project-name nghscorp
 Key files:
-  - components/Hero.tsx — split layout, photo right panel
-  - components/Authority.tsx — 3-col with photo column
-  - components/Nav.tsx — logo image + NGHS. wordmark
-  - components/Footer.tsx — logo + updated social URLs
-  - public/images/hero.jpg — professional office photo from nghscorp.com
-  - public/images/logo.jpg — NGHS Corp. logo mark (says "Home Solutions Corp")
+  - tailwind.config.js — added brand: '#42BED5'
+  - app/globals.css — added --brand: #42BED5
+  - All 22 components/pages updated per color spec
   - GitHub: https://github.com/Kaoz625/nghscorp
   - Live: https://nghscorp.nyctailblazers.com
+
+CRITICAL — DEPLOY PROCESS:
+  Cloudflare Pages is NOT connected to GitHub (git provider = None).
+  git push does NOT update the live site.
+  Deploy command: source ~/.credentials/api-keys.env && npm run build && npx wrangler pages deploy out/ --project-name nghscorp
+
+Color changes summary:
+  - brand (#42BED5 cyan) is now PRIMARY: eyebrow labels, headline accents, CTA buttons, step numbers, stat values, hover links, form focus borders
+  - brass (#C49A3C gold) KEPT for: border-brass corners/blockquotes, h-px bg-brass rules, brass/N opacity tints, NGHS dot, pulse-brass keyframe, scrollbar, selection bg
+  - Section bgs changed: StatsBar, about stats section, compliance CTA, managing-agent CTA, sell-your-property CTA (all bg-brand now)
+  - Floating badges changed: AboutTeaser, managing-agent (bg-brand)
+  - Button text on brand bg is text-white; hover: bg-cream + text-charcoal
+
 Notes:
-  - nghscorp.com subpages all 404 (WordPress permalinks issue) — only homepage scraped
   - NGHS = NG Home Solutions Corp (logo reveals full name)
   - Worker fix applied: nghscorp in PAGES_PROXY in nyctailblazers-subdomain-router
   - CLOUDFLARE_WRANGLER_OAUTH saved to api-keys.env (full access token)

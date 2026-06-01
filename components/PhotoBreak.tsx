@@ -9,12 +9,12 @@ export default function PhotoBreak() {
       <div className="absolute inset-0 bg-charcoal/70" />
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-        <span className="font-mono text-brass text-xs tracking-[0.4em] uppercase block mb-6">
+        <span className="font-mono text-brand text-xs tracking-[0.4em] uppercase block mb-6">
           All Five Boroughs
         </span>
         <h2 className="font-display text-cream text-[clamp(2.4rem,6vw,5rem)] font-black leading-[0.92] tracking-tight max-w-3xl">
           If the City Issues It,<br />
-          <span className="text-brass">We Handle It.</span>
+          <span className="text-brand">We Handle It.</span>
         </h2>
         <p className="font-sans text-cream/50 text-lg mt-8 max-w-xl leading-relaxed">
           Manhattan, Brooklyn, Queens, the Bronx, Staten Island —

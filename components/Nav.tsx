@@ -96,7 +96,7 @@ export default function Nav() {
         {/* Desktop CTA */}
         <Link
           href="/contact/"
-          className="hidden md:inline-flex items-center gap-2 bg-brass text-charcoal font-mono text-xs font-medium tracking-[0.2em] uppercase px-6 py-3 hover:bg-cream transition-colors duration-300"
+          className="hidden md:inline-flex items-center gap-2 bg-brand text-white font-mono text-xs font-medium tracking-[0.2em] uppercase px-6 py-3 hover:bg-cream hover:text-charcoal transition-colors duration-300"
         >
           WORK WITH US
         </Link>
@@ -143,7 +143,7 @@ export default function Nav() {
           <Link
             href="/contact/"
             onClick={() => setMenuOpen(false)}
-            className="bg-brass text-charcoal font-mono text-xs font-medium tracking-[0.2em] uppercase px-6 py-4 text-center mt-6"
+            className="bg-brand text-white font-mono text-xs font-medium tracking-[0.2em] uppercase px-6 py-4 text-center mt-6"
           >
             WORK WITH US
           </Link>

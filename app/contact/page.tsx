@@ -12,10 +12,10 @@ export default function Contact() {
       {/* Hero */}
       <div className="bg-charcoal pt-32 pb-16 px-6 md:px-12 border-b border-cream/8">
         <div className="max-w-[1400px] mx-auto">
-          <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-5">Contact</span>
+          <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-5">Contact</span>
           <h1 className="font-display text-cream text-[clamp(2.8rem,6vw,5.5rem)] font-black leading-[0.92] tracking-tight">
             Let's Resolve<br />
-            <span className="text-brass">Your Violations.</span>
+            <span className="text-brand">Your Violations.</span>
           </h1>
           <p className="font-sans text-cream/50 text-xl mt-6 max-w-xl leading-relaxed">
             Send us your property address. We'll pull the violation history and outline a resolution path — no obligation, no charge.
@@ -32,7 +32,7 @@ export default function Contact() {
             <div className="space-y-10 mb-14">
               <div>
                 <span className="font-mono text-cream/30 text-[10px] tracking-[0.3em] uppercase block mb-3">Email</span>
-                <a href="mailto:nicole@nghscorp.com" className="font-display text-cream text-2xl md:text-3xl hover:text-brass transition-colors duration-200">
+                <a href="mailto:nicole@nghscorp.com" className="font-display text-cream text-2xl md:text-3xl hover:text-brand transition-colors duration-200">
                   nicole@nghscorp.com
                 </a>
               </div>
@@ -55,7 +55,7 @@ export default function Contact() {
                     { label: 'Facebook', href: 'https://facebook.com/nghscorp' },
                   ].map(({ label, href }) => (
                     <a key={label} href={href} target="_blank" rel="noopener noreferrer"
-                      className="font-mono text-cream/30 text-xs tracking-[0.25em] uppercase hover:text-brass transition-colors duration-200">
+                      className="font-mono text-cream/30 text-xs tracking-[0.25em] uppercase hover:text-brand transition-colors duration-200">
                       {label}
                     </a>
                   ))}

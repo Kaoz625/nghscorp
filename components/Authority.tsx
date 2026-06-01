@@ -43,14 +43,14 @@ export default function Authority() {
 
             {/* Floating label over photo */}
             <div className="absolute bottom-6 left-6 z-10">
-              <span className="font-mono text-brass text-[10px] tracking-[0.3em] uppercase block mb-1">NGHS Corp.</span>
+              <span className="font-mono text-brand text-[10px] tracking-[0.3em] uppercase block mb-1">NGHS Corp.</span>
               <p className="font-display text-cream text-sm font-semibold leading-snug">NYC Compliance<br />Specialists</p>
             </div>
           </div>
 
           {/* ── Copy block ── */}
           <div className="flex flex-col justify-center">
-            <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-6">
+            <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-6">
               Why NGHS Corp.
             </span>
             <h2 className="font-display text-cream text-[clamp(2rem,4.5vw,3.5rem)] font-bold leading-tight mb-8 tracking-tight">
@@ -73,7 +73,7 @@ export default function Authority() {
               <p className="font-display text-cream text-xl md:text-2xl italic leading-snug">
                 "Trusted. Strategic. Proven."
               </p>
-              <cite className="font-mono text-brass text-xs tracking-[0.25em] uppercase block mt-4 not-italic">
+              <cite className="font-mono text-brand text-xs tracking-[0.25em] uppercase block mt-4 not-italic">
                 — Nicole, Founder &amp; Principal
               </cite>
             </blockquote>
@@ -84,7 +84,7 @@ export default function Authority() {
             {pillars.map((p) => (
               <div key={p.label} className="py-9 group">
                 <div className="flex items-baseline gap-3 mb-3">
-                  <span className="font-display text-brass text-[2.8rem] font-bold leading-none">
+                  <span className="font-display text-brand text-[2.8rem] font-bold leading-none">
                     {p.stat}
                   </span>
                   <span className="font-display text-cream/25 text-2xl">
@@ -111,7 +111,7 @@ export default function Authority() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-mono text-cream/30 text-[10px] tracking-[0.2em] uppercase hover:text-brass transition-colors duration-200"
+                    className="font-mono text-cream/30 text-[10px] tracking-[0.2em] uppercase hover:text-brand transition-colors duration-200"
                   >
                     {label}
                   </a>

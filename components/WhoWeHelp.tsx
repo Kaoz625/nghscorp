@@ -33,7 +33,7 @@ export default function WhoWeHelp() {
       <div className="max-w-[1400px] mx-auto">
 
         <div className="mb-14 md:mb-18">
-          <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-4">Who We Help</span>
+          <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-4">Who We Help</span>
           <h2 className="font-display text-charcoal text-[clamp(2rem,4.5vw,3.5rem)] font-bold leading-tight tracking-tight">
             Built for Every Type of<br />
             <em className="font-normal text-muted">NYC Property Owner.</em>
@@ -56,7 +56,7 @@ export default function WhoWeHelp() {
                   {c.desc}
                 </p>
               </div>
-              <span className="font-mono text-brass text-xs tracking-[0.2em] uppercase mt-auto group-hover:translate-x-1 transition-transform duration-200">
+              <span className="font-mono text-brand text-xs tracking-[0.2em] uppercase mt-auto group-hover:translate-x-1 transition-transform duration-200">
                 Learn more →
               </span>
             </Link>

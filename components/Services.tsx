@@ -39,7 +39,7 @@ export default function Services() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-20 gap-8">
           <div>
-            <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-5">
+            <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-5">
               What We Do
             </span>
             <h2 className="font-display text-charcoal text-[clamp(2rem,5vw,4rem)] font-bold leading-tight tracking-tight">
@@ -60,7 +60,7 @@ export default function Services() {
               className="group py-10 md:py-12 grid grid-cols-1 md:grid-cols-[90px_1fr_48px] gap-4 md:gap-10 items-start -mx-6 md:-mx-12 px-6 md:px-12 hover:bg-black/[0.03] transition-colors duration-300 cursor-default"
             >
               {/* Number */}
-              <span className="font-mono text-brass text-4xl font-light leading-none pt-1">
+              <span className="font-mono text-brand text-4xl font-light leading-none pt-1">
                 {s.num}
               </span>
 
@@ -86,7 +86,7 @@ export default function Services() {
 
               {/* Arrow */}
               <div className="hidden md:flex items-start justify-end pt-2">
-                <span className="font-sans text-2xl text-charcoal/10 group-hover:text-brass group-hover:translate-x-1 transition-all duration-300">
+                <span className="font-sans text-2xl text-charcoal/10 group-hover:text-brand group-hover:translate-x-1 transition-all duration-300">
                   →
                 </span>
               </div>

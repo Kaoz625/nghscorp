@@ -25,7 +25,7 @@ export default function Testimonials() {
       <div className="max-w-[1400px] mx-auto">
 
         <div className="mb-14">
-          <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-4">Results</span>
+          <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-4">Results</span>
           <h2 className="font-display text-charcoal text-[clamp(2rem,4.5vw,3.5rem)] font-bold leading-tight tracking-tight">
             What NYC Property Owners<br />
             <em className="font-normal text-muted">Say About Us.</em>
@@ -38,7 +38,7 @@ export default function Testimonials() {
               {/* Stars */}
               <div className="flex gap-1">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <span key={i} className="text-brass text-sm">★</span>
+                  <span key={i} className="text-brand text-sm">★</span>
                 ))}
               </div>
 

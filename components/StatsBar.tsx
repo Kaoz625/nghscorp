@@ -7,7 +7,7 @@ const stats = [
 
 export default function StatsBar() {
   return (
-    <div className="bg-brass">
+    <div className="bg-brand">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-charcoal/15">
           {stats.map((s) => (

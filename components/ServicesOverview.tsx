@@ -37,7 +37,7 @@ export default function ServicesOverview() {
 
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div>
-            <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-4">What We Do</span>
+            <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-4">What We Do</span>
             <h2 className="font-display text-cream text-[clamp(2rem,4.5vw,3.5rem)] font-bold leading-tight tracking-tight">
               Three Ways We<br />
               <em className="font-normal text-cream/40">Protect Your Property.</em>
@@ -63,7 +63,7 @@ export default function ServicesOverview() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-charcoal/50 group-hover:bg-charcoal/30 transition-colors duration-300" />
-                <span className="absolute top-5 left-5 font-mono text-brass text-2xl font-light">{s.num}</span>
+                <span className="absolute top-5 left-5 font-mono text-brand text-2xl font-light">{s.num}</span>
               </div>
 
               {/* Content */}
@@ -80,7 +80,7 @@ export default function ServicesOverview() {
                     </span>
                   ))}
                 </div>
-                <div className="flex items-center gap-2 pt-2 font-mono text-brass text-xs tracking-[0.2em] uppercase group-hover:gap-4 transition-all duration-200">
+                <div className="flex items-center gap-2 pt-2 font-mono text-brand text-xs tracking-[0.2em] uppercase group-hover:gap-4 transition-all duration-200">
                   Learn More <span>→</span>
                 </div>
               </div>

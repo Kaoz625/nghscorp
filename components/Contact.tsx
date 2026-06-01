@@ -26,7 +26,7 @@ export default function Contact() {
 
           {/* Left: info block */}
           <div>
-            <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-6">
+            <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-6">
               Contact
             </span>
             <h2 className="font-display text-charcoal text-[clamp(2.4rem,5vw,4.5rem)] font-bold leading-[0.95] tracking-tight mb-8">
@@ -44,7 +44,7 @@ export default function Contact() {
                 </span>
                 <a
                   href="mailto:nicole@nghscorp.com"
-                  className="font-display text-charcoal text-2xl hover:text-brass transition-colors duration-200"
+                  className="font-display text-charcoal text-2xl hover:text-brand transition-colors duration-200"
                 >
                   nicole@nghscorp.com
                 </a>
@@ -75,7 +75,7 @@ export default function Contact() {
           <div className="bg-charcoal p-8 md:p-12">
             {submitted ? (
               <div className="flex flex-col items-start justify-center min-h-[400px] gap-4">
-                <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase">
+                <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase">
                   Message Sent
                 </span>
                 <h3 className="font-display text-cream text-3xl font-bold">
@@ -102,7 +102,7 @@ export default function Contact() {
                           type="text"
                           required
                           placeholder={label.split(' ')[0]}
-                          className="w-full bg-cream/5 border border-cream/10 text-cream font-sans text-sm px-4 py-3 focus:outline-none focus:border-brass placeholder:text-cream/20 transition-colors duration-200"
+                          className="w-full bg-cream/5 border border-cream/10 text-cream font-sans text-sm px-4 py-3 focus:outline-none focus:border-brand placeholder:text-cream/20 transition-colors duration-200"
                         />
                       </div>
                     ))}
@@ -116,7 +116,7 @@ export default function Contact() {
                       type="email"
                       required
                       placeholder="your@email.com"
-                      className="w-full bg-cream/5 border border-cream/10 text-cream font-sans text-sm px-4 py-3 focus:outline-none focus:border-brass placeholder:text-cream/20 transition-colors duration-200"
+                      className="w-full bg-cream/5 border border-cream/10 text-cream font-sans text-sm px-4 py-3 focus:outline-none focus:border-brand placeholder:text-cream/20 transition-colors duration-200"
                     />
                   </div>
 
@@ -126,7 +126,7 @@ export default function Contact() {
                     </label>
                     <div className="relative">
                       <select
-                        className="w-full appearance-none bg-cream/5 border border-cream/10 text-cream/60 font-sans text-sm px-4 py-3 focus:outline-none focus:border-brass transition-colors duration-200 cursor-pointer"
+                        className="w-full appearance-none bg-cream/5 border border-cream/10 text-cream/60 font-sans text-sm px-4 py-3 focus:outline-none focus:border-brand transition-colors duration-200 cursor-pointer"
                         defaultValue=""
                       >
                         <option value="" disabled>
@@ -151,13 +151,13 @@ export default function Contact() {
                     <textarea
                       rows={5}
                       placeholder="Describe your situation…"
-                      className="w-full bg-cream/5 border border-cream/10 text-cream font-sans text-sm px-4 py-3 focus:outline-none focus:border-brass placeholder:text-cream/20 transition-colors duration-200 resize-none"
+                      className="w-full bg-cream/5 border border-cream/10 text-cream font-sans text-sm px-4 py-3 focus:outline-none focus:border-brand placeholder:text-cream/20 transition-colors duration-200 resize-none"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-brass text-charcoal font-mono text-xs font-semibold tracking-[0.2em] uppercase py-4 hover:bg-cream transition-colors duration-300 mt-2"
+                    className="w-full bg-brand text-white font-mono text-xs font-semibold tracking-[0.2em] uppercase py-4 hover:bg-cream hover:text-charcoal transition-colors duration-300 mt-2"
                   >
                     SEND MESSAGE
                   </button>

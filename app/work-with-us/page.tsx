@@ -62,10 +62,10 @@ export default function WorkWithUs() {
       <div className="relative min-h-[50vh] flex items-end overflow-hidden pt-28 bg-charcoal">
         <div className="absolute inset-0 hero-grain opacity-[0.03]" />
         <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 pb-16 md:pb-24 w-full">
-          <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-5">The Process</span>
+          <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-5">The Process</span>
           <h1 className="font-display text-cream text-[clamp(2.8rem,6vw,5.5rem)] font-black leading-[0.92] tracking-tight">
             How We Work<br />
-            <span className="text-brass">With You.</span>
+            <span className="text-brand">With You.</span>
           </h1>
           <p className="font-sans text-cream/55 text-xl mt-6 max-w-xl leading-relaxed">
             Five steps. No surprises. You get updates at every stage, and we own every detail.
@@ -80,7 +80,7 @@ export default function WorkWithUs() {
             {steps.map((step) => (
               <div key={step.num} className="py-14 grid grid-cols-1 lg:grid-cols-[100px_1fr_1fr] gap-8 items-start">
                 <div>
-                  <span className="font-mono text-brass text-3xl font-light block">{step.num}</span>
+                  <span className="font-mono text-brand text-3xl font-light block">{step.num}</span>
                   <span className="font-mono text-charcoal/30 text-[10px] tracking-[0.25em] uppercase block mt-2">{step.duration}</span>
                 </div>
                 <div>
@@ -101,7 +101,7 @@ export default function WorkWithUs() {
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <span className="font-mono text-brass text-xs tracking-[0.3em] uppercase block mb-5">Typical Timelines</span>
+              <span className="font-mono text-brand text-xs tracking-[0.3em] uppercase block mb-5">Typical Timelines</span>
               <h2 className="font-display text-cream text-[clamp(2rem,4.5vw,3.5rem)] font-bold leading-tight tracking-tight">
                 How Long Does<br />Resolution Take?
               </h2>
@@ -113,7 +113,7 @@ export default function WorkWithUs() {
               {timelines.map((t) => (
                 <div key={t.type} className="py-5 flex items-center justify-between gap-8">
                   <span className="font-sans text-cream/60 text-sm">{t.type}</span>
-                  <span className="font-mono text-brass text-sm tracking-wide whitespace-nowrap">{t.range}</span>
+                  <span className="font-mono text-brand text-sm tracking-wide whitespace-nowrap">{t.range}</span>
                 </div>
               ))}
             </div>
@@ -131,7 +131,7 @@ export default function WorkWithUs() {
               <h2 className="font-display text-cream text-3xl md:text-5xl font-bold">Start with a free violation review.</h2>
               <p className="font-sans text-cream/50 text-lg mt-4 max-w-lg">Send us your address. We pull the history, assess the situation, and tell you exactly what you're looking at — before you commit to anything.</p>
             </div>
-            <Link href="/contact/" className="flex-shrink-0 bg-brass text-charcoal font-mono text-xs font-semibold tracking-[0.2em] uppercase px-10 py-5 hover:bg-cream transition-colors duration-300 whitespace-nowrap">
+            <Link href="/contact/" className="flex-shrink-0 bg-brand text-white font-mono text-xs font-semibold tracking-[0.2em] uppercase px-10 py-5 hover:bg-cream hover:text-charcoal transition-colors duration-300 whitespace-nowrap">
               GET YOUR REVIEW →
             </Link>
           </div>
